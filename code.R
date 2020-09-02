@@ -1,14 +1,3 @@
-
-# Define function for mapping out the segments of the diamond
-diamondCI <- function(x, y, ul, ll, w = ul-ll, ...){
-  hw <- w/2
-  segments(x-hw, y, x+hw, y, ...)  # horizontal bar
-  segments(x-hw, y, x, ul, ...) # left upper diag
-  segments(x, ul, x+hw, y, ...) # right upper diag
-  segments(x-hw, y, x, ll, ...) # left lower diag
-  segments(x, ll, x+hw, y, ...) # right lwoer diag
-}
-
 # Define data to be plotted
 # just guessing values based on plot sent in email
 # REPLACE WITH CORRECT DATA
